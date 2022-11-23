@@ -7,7 +7,7 @@ pipeline {
         stage('Initilization') {
             steps {
                 sh "echo ${BRANCH_NAME}"
-                sh "echo ${CHANGE_ID}"
+                sh "echo ${BUILD_ID}"
                 sh "echo ${BUILD_NUMBER}"
             }
         }
