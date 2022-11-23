@@ -10,6 +10,7 @@ pipeline {
                 sh "echo ${BUILD_ID}"
                 sh "echo ${BUILD_NUMBER}"
                 sh "echo ${env.TAG_NAME}"
+                sh "echo ${env.GIT_PREVIOUS_SUCCESSFUL_COMMIT}"
                 checkout([
                       $class: 'GitSCM',
                       branches: scm.branches,
