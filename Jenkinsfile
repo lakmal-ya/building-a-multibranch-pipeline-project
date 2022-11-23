@@ -9,6 +9,7 @@ pipeline {
                 sh "echo ${BRANCH_NAME}"
                 sh "echo ${BUILD_ID}"
                 sh "echo ${BUILD_NUMBER}"
+                sh "echo ${TAG_NAME}"
             }
         }
         // stage('Build') {
